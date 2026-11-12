@@ -16,6 +16,12 @@
     <meta property="og:title" content="About Cooldatasoft">
     <meta property="og:description" content="A data-focused software engineering and consultancy company.">
     <meta property="og:url" content="https://cooldatasoft.com/about-us.html">
+    <meta property="og:image" content="https://cooldatasoft.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cooldatasoft - Data-Focused Software Engineering & Consultancy">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cooldatasoft.com/og-image.png">
 
     <link rel="canonical" href="https://cooldatasoft.com/about-us.html">
 
@@ -32,12 +38,14 @@
 </head>
 <body class="font-sans text-slate-600 antialiased bg-white">
 
+<a href="#main" class="skip-link">Skip to main content</a>
+
 <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-20 items-center">
             <a href="index.html" class="flex items-center gap-2 group">
-                <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-xs group-hover:bg-brand-700 transition">CDS</div>
-                <span class="font-bold text-xl text-slate-900 tracking-tight">Cooldatasoft</span>
+                <div class="w-8 h-8 bg-brand-700 rounded-lg flex items-center justify-center text-white font-bold text-xs group-hover:bg-brand-800 transition" aria-hidden="true">CDS</div>
+                <span class="nav-brand-name font-bold text-xl text-slate-900 tracking-tight">Cooldatasoft</span>
             </a>
             <div class="hidden md:flex space-x-8">
                 <a href="index.html#services" class="text-sm font-medium hover:text-brand-600 transition">Services</a>
@@ -46,8 +54,8 @@
             </div>
             <div class="flex items-center gap-4">
                 <a href="mailto:info@cooldatasoft.com" class="hidden sm:block text-sm font-medium text-slate-900 hover:text-brand-600">Contact</a>
-                <a href="index.html#contact" class="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition shadow-lg shadow-slate-200">Talk to us</a>
-                <button id="mobile-menu-button" class="md:hidden text-slate-600 hover:text-slate-900 focus:outline-none ml-2" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                <a href="index.html#contact" class="nav-cta whitespace-nowrap bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition shadow-lg shadow-slate-200">Talk to us</a>
+                <button id="mobile-menu-button" class="md:hidden text-slate-600 hover:text-slate-900 ml-2" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                     <i id="mobile-menu-icon" aria-hidden="true" class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
@@ -63,6 +71,8 @@
         </div>
     </div>
 </nav>
+
+<main id="main">
 
 <!-- Page Hero -->
 <section class="page-hero-bg pt-32 pb-12">
@@ -87,10 +97,10 @@
         <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-slate-100">
 
             <h2 class="text-2xl font-bold text-slate-900 mb-3">Who we are</h2>
-            <p class="text-slate-600 mb-4">Cooldatasoft is a software engineering and consultancy company with a single focus: helping organisations get real value out of their data. We build custom software, design and operate data platforms and pipelines, and advise teams on the architecture and tooling that will actually serve them.</p>
+            <p class="text-slate-600 mb-4">We have a single focus: helping organisations get real value out of their data. We build custom software, design and operate data platforms and pipelines, and advise teams on the architecture and tooling that will actually serve them.</p>
             <p class="text-slate-600 mb-12">We&apos;re engineers first. That means we care about the unglamorous parts — data quality, tests, monitoring and maintainability — because those are what separate a demo from a system you can rely on.</p>
 
-            <h2 class="text-2xl font-bold text-slate-900 mb-3">Our focus</h2>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Our focus</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                     <div class="w-10 h-10 bg-cyan-100 text-cyan-600 rounded-xl flex items-center justify-center mb-4"><i aria-hidden="true" class="fa-solid fa-database"></i></div>
@@ -128,8 +138,7 @@
                 </div>
             </div>
 
-            <h2 class="text-2xl font-bold text-slate-900 mb-3">Company details</h2>
-            <p class="text-slate-600 mb-6">Cooldatasoft is a software engineering and consultancy company.</p>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Company details</h2>
             <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-sm text-slate-600">
                 <p class="font-semibold text-slate-900 mb-1">Cooldatasoft Limited</p>
                 <p>Registered in England &amp; Wales &middot; Company No. 07323428 &middot; VAT No. 994522387</p>
@@ -140,19 +149,21 @@
     </div>
 </section>
 
+</main>
+
 <!-- Footer -->
 <footer class="bg-white border-t border-slate-100 pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div class="col-span-2 md:col-span-1">
                 <div class="flex items-center gap-2 mb-4">
-                    <div class="w-6 h-6 bg-brand-600 rounded flex items-center justify-center text-white font-bold text-[10px]">CDS</div>
+                    <div class="w-6 h-6 bg-brand-700 rounded flex items-center justify-center text-white font-bold text-[10px]" aria-hidden="true">CDS</div>
                     <span class="font-bold text-lg text-slate-900">Cooldatasoft</span>
                 </div>
                 <p class="text-sm text-slate-500">Data-focused software engineering &amp; consultancy.</p>
             </div>
             <div>
-                <h4 class="font-bold text-slate-900 mb-4">Company</h4>
+                <h2 class="font-bold text-slate-900 mb-4">Company</h2>
                 <ul class="space-y-2 text-sm text-slate-500">
                     <li><a href="about-us.html" class="hover:text-brand-600">About Us</a></li>
                     <li><a href="index.html#approach" class="hover:text-brand-600">Approach</a></li>
@@ -160,7 +171,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold text-slate-900 mb-4">Services</h4>
+                <h2 class="font-bold text-slate-900 mb-4">Services</h2>
                 <ul class="space-y-2 text-sm text-slate-500">
                     <li><a href="index.html#services" class="hover:text-brand-600">Data platforms</a></li>
                     <li><a href="index.html#services" class="hover:text-brand-600">Custom software</a></li>
@@ -168,7 +179,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold text-slate-900 mb-4">Legal</h4>
+                <h2 class="font-bold text-slate-900 mb-4">Legal</h2>
                 <ul class="space-y-2 text-sm text-slate-500">
                     <li><a href="privacy-policy.html" class="hover:text-brand-600">Privacy Policy</a></li>
                     <li><a href="terms-and-conditions.html" class="hover:text-brand-600">Terms &amp; Conditions</a></li>

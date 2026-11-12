@@ -33,8 +33,15 @@
       "name": "Cooldatasoft",
       "legalName": "Cooldatasoft Limited",
       "url": "https://cooldatasoft.com/",
+      "logo": "https://cooldatasoft.com/apple-touch-icon.png",
+      "description": "Software engineering and consultancy company specialising in custom software, data platforms and pipelines, and technical consultancy.",
       "email": "info@cooldatasoft.com",
       "vatID": "994522387",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Companies House company number",
+        "value": "07323428"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "7 Larkshall Road",
@@ -45,7 +52,7 @@
     }
     </script>
 
-    <!-- Fonts: Plus Jakarta Sans (matches the EasyTaxer template) -->
+    <!-- Fonts: Plus Jakarta Sans, self-hosted -->
     <link rel="stylesheet" href="css/fonts.css">
 
     <link rel="stylesheet" href="css/tailwind.css">
@@ -60,14 +67,16 @@
 </head>
 <body class="font-sans text-slate-600 antialiased selection:bg-brand-100 relative">
 
+<a href="#main" class="skip-link">Skip to main content</a>
+
 <!-- Navbar -->
 <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-20 items-center">
             <div class="flex items-center gap-2">
                 <a href="index.html" class="flex items-center gap-2 group">
-                    <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-xs group-hover:bg-brand-700 transition">CDS</div>
-                    <span class="font-bold text-xl text-slate-900 tracking-tight">Cooldatasoft</span>
+                    <div class="w-8 h-8 bg-brand-700 rounded-lg flex items-center justify-center text-white font-bold text-xs group-hover:bg-brand-800 transition" aria-hidden="true">CDS</div>
+                    <span class="nav-brand-name font-bold text-xl text-slate-900 tracking-tight">Cooldatasoft</span>
                 </a>
             </div>
 
@@ -81,10 +90,10 @@
 
             <div class="flex items-center gap-4">
                 <a href="mailto:info@cooldatasoft.com" class="hidden sm:block text-sm font-medium text-slate-900 hover:text-brand-600">Contact</a>
-                <a href="#contact" class="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition shadow-lg shadow-slate-200">Talk to us</a>
+                <a href="#contact" class="nav-cta whitespace-nowrap bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition shadow-lg shadow-slate-200">Talk to us</a>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" class="md:hidden text-slate-600 hover:text-slate-900 focus:outline-none ml-2" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                <button id="mobile-menu-button" class="md:hidden text-slate-600 hover:text-slate-900 ml-2" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                     <i id="mobile-menu-icon" aria-hidden="true" class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
@@ -103,6 +112,8 @@
         </div>
     </div>
 </nav>
+
+<main id="main">
 
 <!-- Hero Section -->
 <section class="pt-32 pb-20 hero-bg">
@@ -262,19 +273,21 @@
     </div>
 </section>
 
+</main>
+
 <!-- Footer -->
 <footer class="bg-white border-t border-slate-100 pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div class="col-span-2 md:col-span-1">
                 <div class="flex items-center gap-2 mb-4">
-                    <div class="w-6 h-6 bg-brand-600 rounded flex items-center justify-center text-white font-bold text-[10px]">CDS</div>
+                    <div class="w-6 h-6 bg-brand-700 rounded flex items-center justify-center text-white font-bold text-[10px]" aria-hidden="true">CDS</div>
                     <span class="font-bold text-lg text-slate-900">Cooldatasoft</span>
                 </div>
                 <p class="text-sm text-slate-500">Data-focused software engineering &amp; consultancy.</p>
             </div>
             <div>
-                <h4 class="font-bold text-slate-900 mb-4">Company</h4>
+                <h2 class="font-bold text-slate-900 mb-4">Company</h2>
                 <ul class="space-y-2 text-sm text-slate-500">
                     <li><a href="about-us.html" class="hover:text-brand-600">About Us</a></li>
                     <li><a href="index.html#approach" class="hover:text-brand-600">Approach</a></li>
@@ -282,7 +295,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold text-slate-900 mb-4">Services</h4>
+                <h2 class="font-bold text-slate-900 mb-4">Services</h2>
                 <ul class="space-y-2 text-sm text-slate-500">
                     <li><a href="index.html#services" class="hover:text-brand-600">Data platforms</a></li>
                     <li><a href="index.html#services" class="hover:text-brand-600">Custom software</a></li>
@@ -290,7 +303,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold text-slate-900 mb-4">Legal</h4>
+                <h2 class="font-bold text-slate-900 mb-4">Legal</h2>
                 <ul class="space-y-2 text-sm text-slate-500">
                     <li><a href="privacy-policy.html" class="hover:text-brand-600">Privacy Policy</a></li>
                     <li><a href="terms-and-conditions.html" class="hover:text-brand-600">Terms &amp; Conditions</a></li>

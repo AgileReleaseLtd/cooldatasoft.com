@@ -1,4 +1,4 @@
-/* Plus Jakarta Sans — SELF-HOSTED for Cooldatasoft (#1410, extending #1254 to the brochure sites).
+/* Plus Jakarta Sans — SELF-HOSTED for Cooldatasoft.
  *
  * WHY THIS FILE EXISTS. Every page of cooldatasoft.com used to carry three <link>s to Google:
  *   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +16,8 @@
  * DELIVERY change, not a design change. The four .woff2 files are byte-identical downloads
  * of the same four URLs.
  *
- * 🔴 THIS COPY BELONGS TO cooldatasoft.com AND IS NOT SHARED. EasyTaxer has its own copy under
- * easytaxer-frontend/static-site-src/css/, and the other brochure brand has its own. They
- * are byte-identical today and that is a coincidence of provenance, not a contract:
- * cooldatasoft.com is an INDEPENDENT site, and a change made for one brand must never silently
- * alter another. Do not "de-duplicate" these into one shared file — the coupling is the
- * defect, not the duplication.
+ * 🔴 THIS COPY BELONGS TO cooldatasoft.com AND IS NOT SHARED with any other website: a change
+ * made for another site must never silently alter this one.
  *
  * Referenced by RELATIVE path (`css/fonts.css`) from the flat pages beside it, exactly as
  * `css/tailwind.css` already is. No rewrite or build

@@ -1,5 +1,5 @@
 /**
- * Google Analytics 4 on this website, behind an OPT-IN cookie banner (EasyTaxer item #2404).
+ * Google Analytics 4 on this website, behind an OPT-IN cookie banner.
  *
  * Owner's decision (2026-10-07): one GA4 property per site; an opt-in banner, so Google Analytics loads
  * only after the visitor presses Accept; Google Consent Mode v2, everything denied by default.
@@ -156,7 +156,8 @@
         var text = el('p', 'text-sm text-slate-500 mb-4',
             'We’d like to use Google Analytics cookies to understand how people use this website, so we can improve it. ' +
             'They are optional: we only set them if you accept. ');
-        var link = el('a', 'text-brand-600 hover:underline', 'Read our Cookie Policy');
+        // Underlined: a link in a sentence must not rely on colour alone.
+        var link = el('a', 'text-brand-600 underline', 'Read our Cookie Policy');
         link.setAttribute('href', POLICY_HREF);
         text.appendChild(link);
         card.appendChild(text);
